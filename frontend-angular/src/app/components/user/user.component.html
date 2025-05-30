@@ -1,0 +1,32 @@
+<div class="container">
+  <h3>ערוך את המשתמש שלך</h3>
+  <form [formGroup]="updateForm" (ngSubmit)="submit()">
+    <div class="inputs">
+      <div class="right">
+        <label for="">שם משתמש</label>
+        <input type="text" formControlName="userName" placeholder="הכנס שם משתמש" />
+
+        <label for="">שם פרטי</label>
+        <input type="text" formControlName="fName" placeholder="הכנס שם פרטי" />
+
+        <label for="">שם משפחה</label>
+        <input type="text" formControlName="lName" placeholder="הכנס שם משפחה" />
+        
+        <label for="">טלפון</label>
+        <input type="text" formControlName="phone" placeholder="הכנס טלפון" />
+ 
+    </div>
+      <div class="left">
+        <label for="">כתובת</label>
+        <input type="text" formControlName="address" placeholder="הכנס כתובת" />
+
+        <label for="">מייל</label>
+        <input type="text" formControlName="email" placeholder="הכנס מייל" />
+
+        <label for="">סיסמה</label>
+        <input type="text" formControlName="password" placeholder="הכנס סיסמה" />
+      </div>
+    </div>
+    <button type="submit" [disabled]="!updateForm.valid">שמור שינויים</button>
+  </form>
+</div>

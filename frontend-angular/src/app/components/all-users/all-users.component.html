@@ -1,0 +1,36 @@
+<!-- component template -->
+<div class="users-container">
+  <h2>רשימת משתמשים</h2>
+  <table class="users-table">
+    <thead>
+      <tr>
+        <!-- <th>מספר מזהה</th> -->
+        <th>שם משתמש</th>
+        <th>שם פרטי</th>
+        <th>שם משפחה</th>
+        <th>טלפון</th>
+        <th>כתובת</th>
+        <th>אימייל</th>
+        <th>סיסמה</th>
+        <th>פעולות</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (u of users; track $index) {
+        <tr>
+          <!-- <td>{{u.userId}}</td> -->
+          <td>{{u.userName}}</td>
+          <td>{{u.fName}}</td>
+          <td>{{u.lName}}</td>
+          <td>{{u.phoneNumber}}</td>
+          <td>{{u.address}}</td>
+          <td>{{u.email}}</td>
+          <td>{{u.password}}</td>
+          <td>
+            <button class="delete-btn" (click)="deleteUser(u.userId)">הסר</button>
+          </td>
+        </tr>
+      }
+    </tbody>
+  </table>
+</div>

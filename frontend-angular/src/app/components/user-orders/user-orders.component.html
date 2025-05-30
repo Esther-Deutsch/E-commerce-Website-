@@ -1,0 +1,20 @@
+@if (userOrders.length == 0) {
+  <h3 class="no-orders">אין לך עדיין רכישות!</h3>
+} @else {
+  <div class="orders-wrapper">
+    <h3>רשימת הרכישות שלך</h3>
+    <h2 class="total-sum">סכום כולל: {{ totalSum | numberWithCommas }} ₪</h2>
+    <div class="orders-list">
+      <div class="orders-header">
+        <span>תאריך רכישה</span>
+        <span>סכום</span>
+      </div>
+      @for (o of userOrders; track $index) {
+        <div class="order-row">
+          <span>{{ o.orderDate | date:'dd/MM/yyyy' }}</span>
+          <span>{{ o.orderSum | numberWithCommas}} ₪</span>
+        </div>
+      }
+    </div>
+  </div>
+}

@@ -1,0 +1,60 @@
+@import '../../../styles/mixins';
+
+.container{
+
+    // עיצוב לאינפוט של הסיסמה
+    .example-container mat-form-field + mat-form-field {
+      margin-left: 8px;
+    }
+
+    .example-right-align {
+      text-align: right;
+    }
+
+    input.example-right-align::-webkit-outer-spin-button,
+    input.example-right-align::-webkit-inner-spin-button {
+      display: none;
+    }
+
+    input.example-right-align {
+      -moz-appearance: textfield;
+    }
+
+    .pass{
+        padding-right: 16px;
+    }
+
+    background-image: url('../../../assets/images/background_img.png');
+    background-size: cover; /* או contain, תלוי איך אתה רוצה שהתמונה תוצג */
+    background-position: center; /* מרכז את התמונה */
+    height: 100vh; /* גובה מלא של מסך */
+    width: 100%; /* רוחב מלא */
+
+    @include myFlex($fd: column, $ac: flex-start, $jc : center, $fw: wrap);
+
+    height: 80vh;
+
+    .form{
+
+        @include myFlex($fd : column, $jc: space-evenly, $ac: center);
+
+        padding: 20px;
+        margin: 20px;
+        border-radius: 10px;
+        height: 100%;
+        width: 30%;
+        background-color: rgb(255, 255, 255, 0.8);
+
+        .input{
+            width: 300px;
+        }
+    }
+
+    .logIn{
+        color: rgb(34, 34, 199);
+    }
+    .logIn:hover{
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}

@@ -1,0 +1,26 @@
+<div class="categories-container">
+  <div class="category">
+    <h4>הוסף קטגוריה חדשה</h4>
+    <p>שם קטגוריה:</p>
+    <input type="text" #name/>
+    <button (click)="addCategory(name.value)" class="addBtn" style="background-color: rgb(136, 136, 136);">
+      <img src="assets\images\add.png" alt="" style="width: 25px" />
+      הוסף קטגוריה 
+    </button>
+  </div>
+
+  @for (c of categories; track $index) {
+  <div class="category">
+    <p>מספר קטגוריה: {{ c.categoryId }}</p>
+    <p>שם קטגוריה: {{ c.categoryName }}</p>
+    <button (click)="showEdit(c.categoryId)">ערוך קטגוריה</button>
+
+    <div class="updateCategory" *ngIf="editingCategoryId === c.categoryId">
+      <span class="close-btn" (click)="closeEdit()">×</span>
+      <p>הכנס שם חדש לקטגוריה {{ c.categoryName }}</p>
+      <input type="text" #newName placeholder="שם קטגוריה" />
+      <button (click)="save(c.categoryId, newName.value)">שמור שינויים</button>
+    </div>
+  </div>
+  }
+</div>

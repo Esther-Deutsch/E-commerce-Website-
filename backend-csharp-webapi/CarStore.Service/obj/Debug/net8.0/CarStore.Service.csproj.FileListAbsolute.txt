@@ -1,0 +1,60 @@
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרוייקט\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Service.deps.json
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרוייקט\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Service.dll
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרוייקט\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Service.pdb
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרוייקט\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Core.dll
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרוייקט\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Core.pdb
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרוייקט\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.csproj.AssemblyReference.cache
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרוייקט\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרוייקט\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.AssemblyInfoInputs.cache
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרוייקט\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.AssemblyInfo.cs
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרוייקט\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.csproj.CoreCompileInputs.cache
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרוייקט\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.ED88B7C4.Up2Date
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרוייקט\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.dll
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרוייקט\CarStore\CarStore.Service\obj\Debug\net8.0\refint\CarStore.Service.dll
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרוייקט\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.pdb
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרוייקט\CarStore\CarStore.Service\obj\Debug\net8.0\ref\CarStore.Service.dll
+E:\school\גב' חני גרינפלד  api\פרוייקט\חדש\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Service.deps.json
+E:\school\גב' חני גרינפלד  api\פרוייקט\חדש\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Service.dll
+E:\school\גב' חני גרינפלד  api\פרוייקט\חדש\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Service.pdb
+E:\school\גב' חני גרינפלד  api\פרוייקט\חדש\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Core.dll
+E:\school\גב' חני גרינפלד  api\פרוייקט\חדש\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Core.pdb
+E:\school\גב' חני גרינפלד  api\פרוייקט\חדש\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.csproj.AssemblyReference.cache
+E:\school\גב' חני גרינפלד  api\פרוייקט\חדש\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\school\גב' חני גרינפלד  api\פרוייקט\חדש\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.AssemblyInfoInputs.cache
+E:\school\גב' חני גרינפלד  api\פרוייקט\חדש\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.AssemblyInfo.cs
+E:\school\גב' חני גרינפלד  api\פרוייקט\חדש\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.csproj.CoreCompileInputs.cache
+E:\school\גב' חני גרינפלד  api\פרוייקט\חדש\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.ED88B7C4.Up2Date
+E:\school\גב' חני גרינפלד  api\פרוייקט\חדש\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.dll
+E:\school\גב' חני גרינפלד  api\פרוייקט\חדש\CarStore\CarStore.Service\obj\Debug\net8.0\refint\CarStore.Service.dll
+E:\school\גב' חני גרינפלד  api\פרוייקט\חדש\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.pdb
+E:\school\גב' חני גרינפלד  api\פרוייקט\חדש\CarStore\CarStore.Service\obj\Debug\net8.0\ref\CarStore.Service.dll
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרויקט\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Service.deps.json
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרויקט\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Service.dll
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרויקט\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Service.pdb
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרויקט\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Core.dll
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרויקט\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Core.pdb
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרויקט\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.csproj.AssemblyReference.cache
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרויקט\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.GeneratedMSBuildEditorConfig.editorconfig
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרויקט\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.AssemblyInfoInputs.cache
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרויקט\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.AssemblyInfo.cs
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרויקט\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.csproj.CoreCompileInputs.cache
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרויקט\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.ED88B7C4.Up2Date
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרויקט\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.dll
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרויקט\CarStore\CarStore.Service\obj\Debug\net8.0\refint\CarStore.Service.dll
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרויקט\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.pdb
+E:\school\גב' חני גרינפלד  api\פרוייקט\פרויקט\CarStore\CarStore.Service\obj\Debug\net8.0\ref\CarStore.Service.dll
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Service.deps.json
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Service.dll
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Service.pdb
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Core.dll
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Service\bin\Debug\net8.0\CarStore.Core.pdb
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.csproj.AssemblyReference.cache
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.GeneratedMSBuildEditorConfig.editorconfig
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.AssemblyInfoInputs.cache
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.AssemblyInfo.cs
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.csproj.CoreCompileInputs.cache
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.ED88B7C4.Up2Date
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.dll
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Service\obj\Debug\net8.0\refint\CarStore.Service.dll
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Service\obj\Debug\net8.0\CarStore.Service.pdb
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Service\obj\Debug\net8.0\ref\CarStore.Service.dll

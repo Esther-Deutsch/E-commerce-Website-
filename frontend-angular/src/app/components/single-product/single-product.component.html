@@ -1,0 +1,30 @@
+<p class="close" (click)="close.emit()">x</p>
+<div class="product-info-layout">
+  <div class="main-section">
+    <h2 class="car-title">{{singleProduct.productName}}</h2>
+    <div class="car-years">{{singleProduct.productName}}</div>
+    <div class="car-desc">{{singleProduct.desc}}</div>
+    <img class="car-image" src="assets/images/cars/{{ singleProduct.img }}.png" />
+  </div>
+  <div class="identity-section">
+    <div class="identity-title">תעודת זהות</div>
+    <hr />
+    <div class="identity-table">
+      <div class="identity-row">
+        <span class="label">מחיר יבואן:  </span>
+        <span class="value">{{singleProduct.price | numberWithCommas}} ₪</span>
+        <hr />
+      </div>
+      <div class="identity-row">
+        <span class="label">צבע:  </span>
+        <span class="value">{{singleProduct.color}}</span>
+        <hr />
+      </div>
+      <div class="identity-row">
+        <span class="label">נותרו:  </span>
+        <span class="value">{{singleProduct.qntInStack}}</span>
+        <hr />
+      </div>
+    </div>
+  </div>
+</div>

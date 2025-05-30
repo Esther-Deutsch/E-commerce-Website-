@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Vd7rvJ48KiJugkOV0kaWxOkjXFN3KLyjXccnvDOFPUE=",
+  "Source": "CarStore.Api",
+  "BasePath": "_content/CarStore.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

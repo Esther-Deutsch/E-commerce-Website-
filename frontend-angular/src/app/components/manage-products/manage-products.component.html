@@ -1,0 +1,91 @@
+<div class="btns">
+  <button (click)="loadProducts()">שליפת כל המוצרים</button>
+  <button (click)="outOfStock()">שליפת המוצרים שלא במלאי</button>
+  <button (click)="toggleAddProduct()">הוסף מוצר חדש</button>
+</div>
+
+<div class="container">
+  <div class="products">
+    @for (p of productService.products; track $index) {
+    <div class="p">
+      <div>
+        <img
+          class="car-img"
+          src="assets/images/cars/{{ p.img }}.png"
+          alt="טויוטה יאריס"
+        />
+      </div>
+      <div class="info">
+        <div>
+          <span class="carName"> {{ p.productName }}</span>
+          {{ p.desc }}
+        </div>
+        <div class="product-details">
+          <span class="product-year">מחיר : </span>
+          <span class="product-price">
+            <span style="color: #b0b0b0; font-weight: 400">₪</span>
+            <span style="color: #1976d2; font-weight: 700">{{
+              p.price | numberWithCommas
+            }}</span>
+          </span>
+        </div>
+        <div style="padding-top: 15px;"
+        [ngStyle]="{ color: p.qntInStack == '0' ? 'red' : 'inherit' }">כמות במלאי: 
+          {{p.qntInStack}}
+        </div>
+      </div>
+      <div class="favorite">
+        <div>
+          <img
+            class="options-img"
+            (click)="deleteProduct(p.productId)"
+            src="assets/images/trash-bin.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+</div>
+
+<!-- חלון קופץ -->
+<div class="modal" *ngIf="isAddProductVisible">
+  <div class="modal-content">
+    <span class="close" (click)="toggleAddProduct()">&times;</span>
+    <div class="addProduct">
+      <form class="form" [formGroup]="addProductForm" (ngSubmit)="submit()">
+        <div>
+            <input type="text" formControlName="productName" placeholder="שם מוצר"/>
+        </div>
+        <div>
+            <input type="text" formControlName="desc" placeholder="תאור מוצר" />
+        </div>
+
+        <div>
+            <input type="text" formControlName="color" placeholder="צבע מוצר" />
+        </div>
+
+        <div>
+            <input type="text" formControlName="imgName" placeholder="שם התמונה" />
+        </div>
+
+        <div>
+            <input type="number" formControlName="price" placeholder="מחיר" />
+        </div>
+
+        <div>
+            <input type="text" formControlName="qty" placeholder="כמות במלאי"/>
+        </div>
+
+        <div>
+            <input type="number" formControlName="categoryId" placeholder="מספר קטגוריה"/>
+        </div>
+
+        <button type="submit" [disabled]="!addProductForm.valid">הוסף</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+

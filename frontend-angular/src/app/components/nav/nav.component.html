@@ -1,0 +1,186 @@
+<div class="container">
+  <div class="nav-head">
+    <img class="head-img" src="assets/images/logo.png" alt="תמונה" />
+  </div>
+
+  <div class="routs">
+    <div class="r_btns">
+      <p routerLink="home" routerLinkActive="active">אודות</p>
+      <p (click)="goToAll()" routerLink="products" routerLinkActive="active">
+        רכבים
+      </p>
+      <!-- <p routerLinkActive="active">יצרנים</p> -->
+      <p
+        mat-button
+        [matMenuTriggerFor]="manufacturersMenu"
+        routerLinkActive="active"
+      >
+        יצרנים
+      </p>
+      <mat-menu #manufacturersMenu="matMenu" xPosition="before">
+        <button class="comp" (click)="filterByName(20)">
+          קיה<img class="logo_img" src="assets/images/logos/kia.png" alt="" />
+        </button>
+        <button class="comp" (click)="filterByName(7)">
+          טיוטה<img
+            class="logo_img"
+            src="assets/images/logos/toyota.png"
+            alt=""
+          />
+        </button>
+        <button class="comp" (click)="filterByName(16)">
+          הונדה<img
+            class="logo_img"
+            src="assets/images/logos/honda.png"
+            alt=""
+          />
+        </button>
+        <button class="comp" (click)="filterByName(9)">
+          שברולט<img
+            class="logo_img"
+            src="assets/images/logos/chevrolet.png"
+            alt=""
+          />
+        </button>
+        <button class="comp" (click)="filterByName(10)">
+          אאודי<img
+            class="logo_img"
+            src="assets/images/logos/audi.png"
+            alt=""
+          />
+        </button>
+        <button class="comp" (click)="filterByName(13)">
+          טסלה<img
+            class="logo_img"
+            src="assets/images/logos/tesla.png"
+            alt=""
+          />
+        </button>
+        <button class="comp" (click)="filterByName(18)">
+          ניסאן<img
+            class="logo_img"
+            src="assets/images/logos/nissan.png"
+            alt=""
+          />
+        </button>
+        <button class="comp" (click)="filterByName(17)">
+          ויי<img class="logo_img" src="assets/images/logos/wey.png" alt="" />
+        </button>
+        <button class="comp" (click)="filterByName(14)">
+          מרצדס<img
+            class="logo_img"
+            src="assets/images/logos/mercedes.png"
+            alt=""
+          />
+        </button>
+        <button class="comp" (click)="filterByName(15)">
+          סקודה<img
+            class="logo_img"
+            src="assets/images/logos/skoda.png"
+            alt=""
+          />
+        </button>
+        <button class="comp" (click)="filterByName(19)">
+          מיני<img class="logo_img" src="assets/images/logos/mini.png" alt="" />
+        </button>
+        <button class="comp" (click)="filterByName(12)">
+          ב.מ.וו<img
+            class="logo_img"
+            src="assets/images/logos/bmw.png"
+            alt=""
+          />
+        </button>
+        <button class="comp" (click)="filterByName(11)">
+          וולוו<img
+            class="logo_img"
+            src="assets/images/logos/volvo.png"
+            alt=""
+          />
+        </button>
+        <button class="comp" (click)="filterByName(8)">
+          יונדאי<img
+            class="logo_img"
+            src="assets/images/logos/hyundai.png"
+            alt=""
+          />
+        </button>
+        <button class="comp" (click)="filterByName(21)">
+          סובארו<img
+            class="logo_img"
+            src="assets/images/logos/subaru.png"
+            alt=""
+          />
+        </button>
+      </mat-menu>
+
+      <p mat-button [matMenuTriggerFor]="filterMenu">מיין לפי מחיר</p>
+      <mat-menu #filterMenu="matMenu" dir="rtl" >
+      <button mat-menu-item (click)="sortByPrice('heigh')">מהנמוך לגבוהה</button>
+      <button mat-menu-item (click)="sortByPrice('low')">מהגבוהה לנמוך</button>
+      </mat-menu>
+      <div class="search" style="display: flex; align-items: center;">
+        <img src="assets/images/magnifying-glass.png" alt="" style="width: 15px; padding-left: 10px;">
+        <input type="search">
+      </div>
+    </div>
+    <div class="l_btns">
+      <button mat-button [matMenuTriggerFor]="favoriteMenu">
+        <div
+          matBadge="{{ favoriteService.amountInCart }}"
+          matBadgeOverlap="false"
+          class="demo-section"
+        >
+          <img class="user-img" src="assets/images/favorites.png" alt="משתמש" />
+        </div>
+      </button>
+      <mat-menu #favoriteMenu="matMenu" yPosition="below" dir="rtl">
+        <button mat-menu-item class="cart" routerLink="shopping-cart">רשימת מועדפים</button>
+        <button mat-menu-item routerLink="user-orders">רכישות קודמות</button>
+      </mat-menu>
+
+
+      <button mat-button [matMenuTriggerFor]="belowMenu">
+        <img
+          class="user-img"
+          src="assets/images/{{ userService.userIcon }}"
+          alt="משתמש"
+        />
+      </button>
+      <mat-menu #belowMenu="matMenu" yPosition="below" dir="rtl">
+        <button mat-menu-item routerLink="log-in" routerLinkActive="active">
+          התחבר
+        </button>
+        <button mat-menu-item routerLink="register" routerLinkActive="active">
+          הרשם
+        </button>
+        <button mat-menu-item (click)="updateUser()">ערוך משתמש</button>
+        <button
+          mat-menu-item
+          routerLink=""
+          (click)="signOut()"
+          routerLinkActive="active"
+        >
+          התנתק
+        </button>
+      </mat-menu>
+<!-- מנהל!!!! -->
+      <button mat-icon-button [matMenuTriggerFor]="adminMenu" aria-label="Example icon-button with a menu" dir="rtl">
+      <mat-icon>more_vert</mat-icon>
+      </button>
+      <mat-menu #adminMenu="matMenu" >
+        <button mat-menu-item  *ngIf="userService.isManager()" >
+          <span routerLink="all-users">ניהול משתמשים</span>
+        </button>
+        <button mat-menu-item *ngIf="userService.isManager()" >
+          <span routerLink="manage-products">ניהול מוצרים</span>
+        </button>
+        <button mat-menu-item *ngIf="userService.isManager()" >
+          <span routerLink="all-categories">ניהול קטגוריות</span>
+        </button>
+        <button mat-menu-item  *ngIf="!userService.isManager()" >
+          <span routerLink="all-categories">אין לך הרשאות מנהל</span>
+        </button>
+      </mat-menu>
+    </div>
+  </div>
+</div>

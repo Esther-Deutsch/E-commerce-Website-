@@ -1,0 +1,87 @@
+@import "../../../styles/mixins";
+
+.container {
+  direction: rtl;
+
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  @include myFlex($fd: column, $jc: space-around);
+  text-decoration: overline;
+
+  p:hover {
+    cursor: pointer;
+  }
+  .nav-head {
+    background: #000;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 5px; // אפשר לשנות לפי הצורך
+  }
+
+  .user-img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .routs {
+    // display: flex;
+    // justify-content: space-between;
+    @include myFlex($jc: space-between);
+    background-color: white;
+
+    .r_btns {
+      @include myFlex($ai: center);
+      gap: 3.5rem;
+
+      padding-right: 20px;
+    }
+
+    .l_btns {
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+    }
+
+    .cart {
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+    .active {
+      font-weight: bold;
+    }
+  }
+}
+
+.comp {
+  @include myFlex($jc: flex-end, $ai: center);
+  width: 100%;
+  gap: 1.1rem;
+  border: none;
+}
+
+.comp:hover {
+  background-color: rgb(201, 201, 201);
+  font-weight: bold;
+}
+
+.logo_img {
+  height: 30px;
+  width: 30;
+  border-radius: 30%;
+}
+
+.demo-section {
+  position: relative; // ההורה
+  display: inline-block;
+}
+
+::ng-deep .demo-section .mat-badge-content {
+  background: rgb(255, 170, 0) !important;
+  color: #fff !important;
+}

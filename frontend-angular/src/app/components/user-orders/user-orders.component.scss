@@ -1,0 +1,48 @@
+.orders-wrapper {
+  max-width: 500px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 24px 32px;
+  direction: rtl;
+}
+
+.no-orders {
+  text-align: center;
+  color: #888;
+  margin-top: 60px;
+}
+
+.total-sum {
+  color: rgb(34, 34, 199);
+  margin-bottom: 24px;
+}
+
+.orders-list {
+  margin-top: 16px;
+}
+
+.orders-header, .order-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.orders-header {
+  font-weight: bold;
+  border-bottom: 2px solid #eee;
+  color: #444;
+}
+
+.order-row {
+  border-bottom: 1px solid #f0f0f0;
+  color: #333;
+  transition: background 0.2s;
+}
+.order-row:last-child {
+  border-bottom: none;
+}
+.order-row:hover {
+  background: #f9f9f9;
+}

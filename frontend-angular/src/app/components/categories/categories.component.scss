@@ -1,0 +1,79 @@
+@import "../../../styles/mixins";
+
+
+.addBtn{
+  @include myFlex($ai: center);
+  background-color: white;
+}
+
+.categories-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  direction: rtl;
+}
+
+.category {
+  background: #f5f7fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 20px 24px;
+  min-width: 220px;
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.category button {
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.2s;
+}
+
+.category button:hover {
+  background: #0d47a1;
+}
+
+.updateCategory {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  background: #fff;
+  border: 2px solid #1976d2;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px #0002;
+  padding: 20px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.updateCategory input[type="text"] {
+  margin: 10px 0;
+  padding: 6px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+.updateCategory .close-btn {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 22px;
+  color: #e53935;
+  cursor: pointer;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.updateCategory .close-btn:hover {
+  color: #b71c1c;
+}

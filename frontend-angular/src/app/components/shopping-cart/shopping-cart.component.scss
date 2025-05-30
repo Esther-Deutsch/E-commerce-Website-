@@ -1,0 +1,56 @@
+@import "../../../styles/mixins";
+
+.cart-container {
+  @include myFlex($fd: row-reverse, $jc: flex-end, $fw: wrap);
+  gap: 5rem;
+
+  .cart-container {
+    @include myFlex($jc: center);
+  }
+
+  .cart-summary {
+    @include myFlex($jc: flex-start, $ai: flex-start, $fd: column);
+    width: 30%;
+    min-width: 220px; //
+  }
+
+  .cart-items {
+    @include myFlex($fd: column);
+    gap: 2rem;
+    padding-right: 15px;
+
+    .cart-item {
+      @include myFlex();
+      gap: 3rem;
+
+      padding: 2%;
+      border-bottom: black solid 2px;
+      min-width: 260px;
+      border: 2px solid black;
+      width: 90%;
+      border-radius: 5px;
+
+      img {
+        width: 20%;
+      }
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .cart-container {
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .cart-summary,
+    .cart-item {
+      width: 98vw;
+      min-width: unset;
+      max-width: 100%;
+    }
+    .cart-item {
+      gap: 1rem;
+      padding: 4vw 2vw;
+    }
+  }
+}

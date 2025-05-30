@@ -1,0 +1,197 @@
+@import '../../../styles/mixins';
+
+
+.mainContainer{
+
+  .select-name{
+    text-align: right;
+    font-weight: bold;
+    background-color: white;
+    margin: 0px;
+  }
+
+  .ops{
+    text-align: right;
+  }
+
+  .filters{
+      display: flex;
+      gap: 3rem;
+      padding-right: 10px;
+      padding-top: 20px;
+  }
+
+  .cars-container{
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+      .product {
+        background: #fff;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        overflow: hidden;
+        width: 290px;
+        max-width: 300px;
+        margin: 24px auto;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        direction: rtl;
+        font-family: 'Segoe UI', Arial, sans-serif;
+
+        &__image-inner {
+          width: 100%;
+          height: 160px;      // גובה חדש
+          min-height: 160px;  // גובה חדש
+          max-height: 160px;  // גובה חדש
+          border-bottom: 2px solid #2196f3;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0;
+          transition: box-shadow 0.2s;
+          box-sizing: border-box;
+        }
+
+        img {
+          width: 100%;
+          height: 100%;
+          max-width: 100%;
+          object-fit: cover;
+          border-radius: 0;
+          display: block;
+        }
+
+        &__inner {
+          padding: 0 18px 12px 18px;
+        }
+
+        &__content {
+          margin-top: 10px;
+          margin-bottom: 8px;
+        }
+
+        .product-title {
+          font-size: 1rem;
+          font-weight: bold;
+          color: #222;
+          margin-bottom: 6px;
+          line-height: 1.4;
+          height: 47px;
+          cursor: pointer;
+
+          .carName{
+            font-size: 1.1rem;
+          }
+        }
+
+        .product-title:hover{
+          text-shadow: 1px 1px 2px #d3d2d2;
+        }
+
+        .product-details {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start; // יישור לשמאל ב-RTL
+        gap: 0;
+        font-size: 1.15rem;
+        margin-bottom: 8px;
+        color: #222;
+
+        .product-year {
+          margin-left: 12px;
+          font-weight: 500;
+          color: #222;
+        }
+        .product-price {
+          margin-left: 12px;
+          direction: ltr;
+          font-weight: 700;
+          color: #1976d2;
+          font-size: 1.15rem;
+        }
+      }
+
+        .compare-btn {
+          color: #b0b0b0;
+          font-size: 0.95rem;
+          margin-top: 10px;
+          display: flex;
+          align-items: center;
+          gap: 4px;
+          cursor: pointer;
+          transition: color 0.2s;
+          border: none;
+          background: none;
+
+          &:hover {
+            color: #1976d2;
+          }
+        }
+
+          transition: box-shadow 0.2s;
+
+        &:hover,
+        &:hover .product__image-inner {
+          box-shadow: 0 6px 24px rgba(0, 0, 0, 0.18);
+          z-index: 2;
+        }
+
+        &__image-inner {
+          // ...existing code...
+          transition: box-shadow 0.2s;
+        }
+      }
+
+      .favorite{
+        @include myFlex($jc: space-between, $ai: center);
+
+        .bin{
+          width: 7%;
+        }
+
+        img:hover{
+          cursor: pointer;
+        }
+      }
+
+      .favorite img{
+        padding-top: 10px;
+        width: 6%;
+      }
+  }
+
+  // ============ מודל לפריט היחיד שיפתח =================
+
+  // modal overlay - רקע כהה שקוף
+  .modal-overlay {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 1000;
+  }
+
+  // modal card - כרטיס לבן במרכז
+  .modal-card {
+    position: fixed;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 32px rgba(0,0,0,0.2);
+    z-index: 1001;
+    padding: 2rem 2.5rem;
+    overflow-y: auto;
+    padding-top: 0px;
+    height: 60vh;
+    width: 80vw;
+  }
+
+  @media (max-width: 900px) {
+    .modal-card {
+      width: 80vw;
+      height: 60vh;
+      padding: 1.2rem 0.5rem;
+    }
+  }
+}

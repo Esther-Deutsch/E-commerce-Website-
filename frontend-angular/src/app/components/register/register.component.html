@@ -1,0 +1,98 @@
+<div class="container">
+  <form class="form" [formGroup]="registerForm" (ngSubmit)="submit()">
+    <div class="first">
+      <!-- שם משתמש -->
+      <div>
+        <mat-form-field appearance="fill" class="input">
+          <mat-label>שם משתמש</mat-label>
+          <input formControlName="userName" matInput placeholder="שם משתמש" />
+          <mat-hint></mat-hint>
+        </mat-form-field>
+      </div>
+      <!-- שם פרטי -->
+      <div>
+        <mat-form-field appearance="fill" class="input">
+          <mat-label>שם פרטי</mat-label>
+          <input formControlName="fName" matInput placeholder="שם פרטי" />
+          <mat-hint></mat-hint>
+        </mat-form-field>
+      </div>
+      <!-- שם משפחה -->
+      <div>
+        <mat-form-field appearance="fill" class="input">
+          <mat-label>שם משפחה</mat-label>
+          <input formControlName="lName" matInput placeholder="שם משפחה" />
+          <mat-hint></mat-hint>
+        </mat-form-field>
+      </div>
+    </div>
+    <div>
+      <div class="second">
+        <!-- טלפון -->
+        <div>
+          <mat-form-field appearance="fill" class="input">
+            <mat-label>טלפון</mat-label>
+            <input
+              formControlName="phoneNumber"
+              matInput
+              placeholder="053333333"
+            />
+            <mat-hint></mat-hint>
+          </mat-form-field>
+        </div>
+        <!-- כתובת -->
+        <div>
+          <mat-form-field appearance="fill" class="input">
+            <mat-label>כתובת</mat-label>
+            <input formControlName="address" matInput placeholder="כתובת" />
+            <mat-hint></mat-hint>
+          </mat-form-field>
+        </div>
+        <!-- מייל -->
+        <div>
+          <mat-form-field appearance="fill" class="input">
+            <mat-label>מייל</mat-label>
+            <input
+              formControlName="address"
+              matInput
+              placeholder="cars@gmail.com"
+            />
+            <mat-hint></mat-hint>
+          </mat-form-field>
+        </div>
+        <!-- סיסמה -->
+        <div>
+          <div class="example-container">
+            <mat-form-field>
+              <mat-label class="pass">סיסמה</mat-label>
+              <input
+                class="pass"
+                formControlName="password"
+                matInput
+                [type]="hide() ? 'password' : 'text'"
+              />
+              <button
+                mat-icon-button
+                matSuffix
+                (click)="clickEvent($event)"
+                [attr.aria-label]="'Hide password'"
+                [attr.aria-pressed]="hide()"
+              >
+                <mat-icon>{{
+                  hide() ? "visibility_off" : "visibility"
+                }}</mat-icon>
+              </button>
+            </mat-form-field>
+          </div>
+        </div>
+      </div>
+      <!-- כפתור שליחה -->
+      <button type="submit" [disabled]="!registerForm.valid">הרשם</button>
+
+      <div>
+        יש לך חשבון עדיין?
+        <span class="logIn" (click)="goToLogIN()">התחבר כאן</span>
+      </div>
+    </div>
+  </form>
+</div>

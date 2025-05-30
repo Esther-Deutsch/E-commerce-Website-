@@ -1,0 +1,45 @@
+ <div>
+    <h3>רשימת המועדפים שלך</h3>
+</div>
+
+<main class="cart-container">
+    <section class="cart-summary">
+      <h2>סיכום הזמנה</h2>
+
+      <div class="totals">
+        <p>
+          סכום ביניים <span>₪ {{ selectedSum | numberWithCommas }}</span>
+        </p>
+        <p>
+          סה"כ סכום הפריטים בסל <span>₪ {{ totalSumInCart | numberWithCommas }}</span>
+        </p>
+      </div>
+      <button class="checkout" (click)="buy()">תשלום</button>
+      <div *ngIf="message">בחר את המוצרים שתרצה לקנות</div>
+      <!-- <a href="#" class="back-to-shop">המשך קנייה</a> -->
+    </section>
+
+    <section class="cart-items">
+      @for (item of cart; track $index ) {
+      <div class="cart-item">
+        <input
+          type="checkbox"
+          class=""
+          (change)="updateSum($event, item.product.price)"
+        />
+        <img
+          src="assets/images/cars/{{ item.product.img }}.png"
+          alt="{{ item.product.productName }}"
+        />
+        <div class="item-info">
+          <p class="item-title">{{ item.product.productName }}</p>
+          <!-- <p>total: {{ item.quantity * item.product.price }}</p> -->
+          <!-- <app-quantity-selector></app-quantity-selector> -->
+          <span>₪ {{ item.product.price | numberWithCommas }}</span>
+          <div class="cart-item-image"></div>
+        </div>
+        <p (click)="deleteFromCart(item.product.productId)">מחיקה</p>
+      </div>
+      }
+    </section>
+</main>

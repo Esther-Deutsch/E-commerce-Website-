@@ -1,0 +1,56 @@
+<div class="mainContainer">
+
+
+  <div class="filters">
+    <!-- <mat-form-field>
+      <mat-label>סנן לפי מחיר</mat-label>
+      <mat-select disableRipple>
+        <mat-option value="1" class="ops">מהנמוך לגבוהה</mat-option>
+        <mat-option value="2" class="ops">מהגבוהה לנמוך</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+    <mat-label></mat-label>
+    <input matInput placeholder="חפש רכב" #value value="חפש רכב" onchange="searchChanged(value.value)">
+    </mat-form-field> -->
+  </div>
+
+  <div class="cars-container">
+    @for (p of productService.products; track $index) {
+    <div class="product product--car">
+      <div class="product__image-inner">
+        <img src="assets/images/cars/{{ p.img }}.png" alt="טויוטה יאריס" />
+      </div>
+      <div class="product__inner">
+        <div class="product-title" (click)="showProduct(p)">
+          <span class="carName"> {{ p.productName }}</span>
+          {{ p.desc }}
+        </div>
+        <div class="product-details">
+          <span class="product-year">מחיר |</span>
+          <span class="product-price">
+            <span style="color: #b0b0b0; font-weight: 400">₪</span>
+            <span style="color: #1976d2; font-weight: 700">{{ p.price | numberWithCommas }}</span>
+          </span>
+        </div>
+        <hr />
+        <div class="favorite" >
+          <button class="compare-btn" style="margin-left: 4px" (click)="add(p)">הוסף לרשימת המועדפים</button>
+          <img appColorHeart (click)="add(p)" src="assets/images/favorites.png" alt=""/>
+        </div>
+      </div>
+    </div>
+    }
+  </div>
+
+  @if (showSingle) {
+  <div class="modal-overlay" (click)="showSingle = false"></div>
+  <div class="modal-card">
+    <app-single-product
+      [singleProduct]="productToSend"
+      (close)="closeSingle()"
+    ></app-single-product>
+  </div>
+  }
+</div>

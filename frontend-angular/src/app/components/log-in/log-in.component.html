@@ -1,0 +1,26 @@
+
+<div class="container">
+  <form class="form" [formGroup]="loginForm" (ngSubmit)="submit()">
+    <div>
+      <mat-form-field appearance="fill" class="input">
+        <mat-label>שם משתמש</mat-label>
+        <input formControlName="loginName" matInput placeholder="שם משתמש" />
+        <mat-hint></mat-hint>
+      </mat-form-field>
+    </div>
+    <div>
+      <mat-form-field appearance="fill" class="input">
+        <mat-label class="input">סיסמה</mat-label>
+        <input type="password" formControlName="loginPassword" matInput placeholder="סיסמה" />
+        <mat-hint></mat-hint>
+      </mat-form-field>
+    </div> 
+    <button type="submit" [disabled]="!loginForm.valid">login</button>
+
+      <div>
+    אין לך חשבון עדיין?
+    <span class="signIn" (click)="goToRegister()">הרשם כאן</span>
+  </div>
+  </form>
+
+</div>
