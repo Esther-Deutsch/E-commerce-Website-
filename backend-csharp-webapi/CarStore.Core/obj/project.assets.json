@@ -317,11 +317,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\back-end\\CarStore.Core\\CarStore.Core.csproj",
+      "projectUniqueName": "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\CarWebsite\\backend-csharp-webapi\\CarStore.Core\\CarStore.Core.csproj",
       "projectName": "CarStore.Core",
-      "projectPath": "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\back-end\\CarStore.Core\\CarStore.Core.csproj",
+      "projectPath": "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\CarWebsite\\backend-csharp-webapi\\CarStore.Core\\CarStore.Core.csproj",
       "packagesPath": "C:\\Users\\e0534\\.nuget\\packages\\",
-      "outputPath": "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\back-end\\CarStore.Core\\obj\\",
+      "outputPath": "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\CarWebsite\\backend-csharp-webapi\\CarStore.Core\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\e0534\\AppData\\Roaming\\NuGet\\NuGet.Config",

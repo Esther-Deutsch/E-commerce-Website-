@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Zr+6IOBl32P2eselxdqWf/a8tsKiFL+/pB2vc6LvUC4dj+qEub4h+rzNJ8P4y+lSusrH8ecPKrkMRrzaxM8Idw==",
+  "dgSpecHash": "rZJXPFGg26vf+q1OimZdEI23dgy2SxF43Dp6rs1SEwv+I60U5J/Whr4p9AlM1sd/wuBHeNe93jzGYHPwtq9l7Q==",
   "success": true,
-  "projectFilePath": "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\back-end\\CarStore.Service\\CarStore.Service.csproj",
+  "projectFilePath": "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\CarWebsite\\backend-csharp-webapi\\CarStore.Service\\CarStore.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\e0534\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\e0534\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -120,7 +120,7 @@
       </mat-menu>
       <div class="search" style="display: flex; align-items: center;">
         <img src="assets/images/magnifying-glass.png" alt="" style="width: 15px; padding-left: 10px;">
-        <input type="search">
+        <input type="search" [(ngModel)]="searchText" (input)="freeSearch()">
       </div>
     </div>
     <div class="l_btns">

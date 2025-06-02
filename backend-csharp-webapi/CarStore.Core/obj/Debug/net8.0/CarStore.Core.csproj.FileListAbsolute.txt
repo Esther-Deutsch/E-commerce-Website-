@@ -45,3 +45,16 @@ F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\Car
 F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Core\obj\Debug\net8.0\refint\CarStore.Core.dll
 F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Core\obj\Debug\net8.0\CarStore.Core.pdb
 F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarStore\CarStore.Core\obj\Debug\net8.0\ref\CarStore.Core.dll
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarWebsite\backend-csharp-webapi\CarStore.Core\bin\Debug\net8.0\CarStore.Core.deps.json
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarWebsite\backend-csharp-webapi\CarStore.Core\bin\Debug\net8.0\CarStore.Core.dll
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarWebsite\backend-csharp-webapi\CarStore.Core\bin\Debug\net8.0\CarStore.Core.pdb
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarWebsite\backend-csharp-webapi\CarStore.Core\obj\Debug\net8.0\CarStore.Core.csproj.AssemblyReference.cache
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarWebsite\backend-csharp-webapi\CarStore.Core\obj\Debug\net8.0\CarStore.Core.GeneratedMSBuildEditorConfig.editorconfig
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarWebsite\backend-csharp-webapi\CarStore.Core\obj\Debug\net8.0\CarStore.Core.AssemblyInfoInputs.cache
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarWebsite\backend-csharp-webapi\CarStore.Core\obj\Debug\net8.0\CarStore.Core.AssemblyInfo.cs
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarWebsite\backend-csharp-webapi\CarStore.Core\obj\Debug\net8.0\CarStore.Core.csproj.CoreCompileInputs.cache
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarWebsite\backend-csharp-webapi\CarStore.Core\obj\Debug\net8.0\CarStore.Core.sourcelink.json
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarWebsite\backend-csharp-webapi\CarStore.Core\obj\Debug\net8.0\CarStore.Core.dll
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarWebsite\backend-csharp-webapi\CarStore.Core\obj\Debug\net8.0\refint\CarStore.Core.dll
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarWebsite\backend-csharp-webapi\CarStore.Core\obj\Debug\net8.0\CarStore.Core.pdb
+F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarWebsite\backend-csharp-webapi\CarStore.Core\obj\Debug\net8.0\ref\CarStore.Core.dll

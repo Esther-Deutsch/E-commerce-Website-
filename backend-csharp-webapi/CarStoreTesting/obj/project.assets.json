@@ -8395,11 +8395,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\back-end\\CarStoreTesting\\CarStoreTesting.csproj",
+      "projectUniqueName": "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\CarWebsite\\backend-csharp-webapi\\CarStoreTesting\\CarStoreTesting.csproj",
       "projectName": "CarStoreTesting",
-      "projectPath": "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\back-end\\CarStoreTesting\\CarStoreTesting.csproj",
+      "projectPath": "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\CarWebsite\\backend-csharp-webapi\\CarStoreTesting\\CarStoreTesting.csproj",
       "packagesPath": "C:\\Users\\e0534\\.nuget\\packages\\",
-      "outputPath": "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\back-end\\CarStoreTesting\\obj\\",
+      "outputPath": "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\CarWebsite\\backend-csharp-webapi\\CarStoreTesting\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\e0534\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -8416,8 +8416,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\back-end\\CarStore.Api\\CarStore.Api.csproj": {
-              "projectPath": "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\back-end\\CarStore.Api\\CarStore.Api.csproj"
+            "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\CarWebsite\\backend-csharp-webapi\\CarStore.Api\\CarStore.Api.csproj": {
+              "projectPath": "F:\\school\\גב, חני גרינפלד Angular\\פרויקט סופי\\CarWebsite\\backend-csharp-webapi\\CarStore.Api\\CarStore.Api.csproj"
             }
           }
         }

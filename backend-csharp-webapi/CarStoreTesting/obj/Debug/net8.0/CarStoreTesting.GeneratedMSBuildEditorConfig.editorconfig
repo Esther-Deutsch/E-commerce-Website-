@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = CarStoreTesting
-build_property.ProjectDir = F:\school\גב, חני גרינפלד Angular\פרויקט סופי\back-end\CarStoreTesting\
+build_property.ProjectDir = F:\school\גב, חני גרינפלד Angular\פרויקט סופי\CarWebsite\backend-csharp-webapi\CarStoreTesting\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

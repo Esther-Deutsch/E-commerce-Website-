@@ -13,7 +13,11 @@ export class ProductsServiceService {
   constructor(private httpClient : HttpClient) { }
 
 
-    public products : Product[]
+    public products : Product[] // משתנה שיכיל רשימת מוצרים להצגה
+    public allProducts : Product[] // משתנה שיכיל את כל המוצרים
+    public filteredByPrice : Product [] // משתנה שיכיל את המוצרים ממוינים לפי מחרי
+    public filteredFree : Product [] // משתנה שיכיל מוצרים לפי חיפוש חופשי
+    
 
     //CRUD - פונקציות
 
