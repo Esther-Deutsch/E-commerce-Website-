@@ -63,21 +63,10 @@
         <!-- סיסמה -->
         <div>
           <div class="example-container">
-            <mat-form-field>
+            <mat-form-field [ngStyle]="{ width: inputsWidth }">
               <mat-label class="pass">סיסמה</mat-label>
-              <input
-                class="pass"
-                formControlName="password"
-                matInput
-                [type]="hide() ? 'password' : 'text'"
-              />
-              <button
-                mat-icon-button
-                matSuffix
-                (click)="clickEvent($event)"
-                [attr.aria-label]="'Hide password'"
-                [attr.aria-pressed]="hide()"
-              >
+              <input class="pass" formControlName="password" matInput [type]="hide() ? 'password' : 'text'"/>
+              <button mat-icon-button type="button" matSuffix (click)="clickEvent($event)" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide()">
                 <mat-icon>{{
                   hide() ? "visibility_off" : "visibility"
                 }}</mat-icon>
@@ -88,7 +77,6 @@
       </div>
       <!-- כפתור שליחה -->
       <button type="submit" [disabled]="!registerForm.valid">הרשם</button>
-
       <div>
         יש לך חשבון עדיין?
         <span class="logIn" (click)="goToLogIN()">התחבר כאן</span>

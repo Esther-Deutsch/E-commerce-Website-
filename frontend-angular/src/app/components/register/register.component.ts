@@ -7,14 +7,18 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+import { NgStyle } from '@angular/common';
 
 @Component({
   selector: 'app-register',
-  imports: [RouterLink, ReactiveFormsModule, MatFormFieldModule, MatInputModule, MatIconModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatIconModule],
+  imports: [RouterLink, ReactiveFormsModule, NgStyle, MatFormFieldModule, MatInputModule, MatIconModule, MatFormFieldModule, MatInputModule, MatButtonModule, MatIconModule],
   templateUrl: './register.component.html',
   styleUrl: './register.component.scss'
 })
 export class RegisterComponent {
+
+
+  inputsWidth = '300px'; // משתנה לשמירת הרוחב של האימפוטים 
 
    hide = signal(true);
    clickEvent(event: MouseEvent) {

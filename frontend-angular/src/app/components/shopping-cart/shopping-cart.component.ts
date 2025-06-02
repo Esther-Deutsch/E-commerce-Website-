@@ -8,6 +8,7 @@ import { Order } from '../../classes/order';
 import { UserServiceService } from '../../sevices/user-service.service';
 import { OrderServiceService } from '../../sevices/order-service.service';
 import { NumberWithCommasPipe } from '../../pipes/number-with-commas.pipe';
+import { User } from '../../classes/user';
 
 @Component({
   selector: 'app-shopping-cart',
@@ -20,6 +21,8 @@ export class ShoppingCartComponent implements OnInit {
   cart : Item[];
   selectedSum : number = 0;
   totalSumInCart : number = 0;
+
+  user? : User 
   
   message : boolean = false
 
@@ -36,7 +39,9 @@ export class ShoppingCartComponent implements OnInit {
 
     if (this.cart.length === 0) {
       this.router.navigate(['empty-cart']); // או כל ראוט אחר שתרצי
-    }  
+    } 
+    
+    this.user = this.userService.currentUser
   }
 
   deleteFromCart(productId : number){

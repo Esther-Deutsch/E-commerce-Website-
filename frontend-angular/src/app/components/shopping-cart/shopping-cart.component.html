@@ -1,12 +1,24 @@
  <div>
-    <h3>רשימת המועדפים שלך</h3>
+    <h3 style="text-align: center;">רשימת המועדפים שלך</h3>
 </div>
 
 <main class="cart-container">
     <section class="cart-summary">
       <h2>סיכום הזמנה</h2>
-
+      <div class="info">
+        <h3>פרטים אישיים</h3>
+        <p>
+          שם המזמין: {{user?.userName}}
+        </p>
+        <p>
+          כתובת: {{user?.address}}
+        </p>
+        <p>
+          טלפון: {{user?.phoneNumber}}
+        </p>
+      </div>
       <div class="totals">
+        <h3>תשלום</h3>
         <p>
           סכום ביניים <span>₪ {{ selectedSum | numberWithCommas }}</span>
         </p>
@@ -38,7 +50,7 @@
           <span>₪ {{ item.product.price | numberWithCommas }}</span>
           <div class="cart-item-image"></div>
         </div>
-        <p (click)="deleteFromCart(item.product.productId)">מחיקה</p>
+        <p class="deleteBtn" (click)="deleteFromCart(item.product.productId)">מחיקה</p>
       </div>
       }
     </section>
