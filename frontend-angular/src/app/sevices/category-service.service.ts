@@ -34,28 +34,58 @@ export class CategoryServiceService {
     return this.httpClient.get<Category>(`${this.categoryURL}/${id}`)
   }
 
+  // [Authorize]
   //פונקציה להוספת קטגוריה חדשה
   addCategory(categoryName : string) : Observable<any>
   {
-    return this.httpClient.post(this.categoryURL,    JSON.stringify(categoryName),
+    const token = localStorage.getItem('token');
+    const jwt = token !== null ? JSON.parse(token) : null;
+    if (jwt.value == 'manager') {
+      const headers = new HttpHeaders({
+        'Authorization': `Bearer ${jwt.token}`,// ודא שה-token תקין
+        'Content-Type': 'application/json' 
+      })
+      return this.httpClient.post(this.categoryURL, JSON.stringify(categoryName), { headers });
+    }
+    return this.httpClient.post(this.categoryURL, JSON.stringify(categoryName),
     {
       headers: new HttpHeaders({ 'Content-Type': 'application/json' })
     })
   }
 
+  // [Authorize]
   //פונקציה לעדכון קטגוריה
-  updateCategory(id : number, category : string) : Observable<any>{
+  updateCategory(id : number, category : string) : Observable<any>
+  {
+    const token = localStorage.getItem('token');
+    const jwt = token !== null ? JSON.parse(token) : null;
+    if (jwt.value == 'manager') {
+      const headers = new HttpHeaders({
+      'Authorization': `Bearer ${jwt.token}`,
+      'Content-Type': 'application/json'
+      
+    });
+    return this.httpClient.put(`${this.categoryURL}/${id}`, JSON.stringify(category), { headers })
+    }
     return this.httpClient.put(  `${this.categoryURL}/${id}`,
-    JSON.stringify(category),
-    {
-      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
-    })
+      JSON.stringify(category),
+      {
+        headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+      })
   }
 
+  // [Authorize]
   //פונקציה למחיקת קטגוריה
   deleteCategory(id : number) : Observable<any>
   {
+    const token = localStorage.getItem('token');
+    const jwt = token !== null ? JSON.parse(token) : null;
+    if (jwt.value == 'manager') {
+      const headers = new HttpHeaders({
+        'Authorization': `Bearer ${jwt.token}` // ודא שה-token תקין
+      })
+      return this.httpClient.delete(`${this.categoryURL}/${id}`, { headers });
+    }
     return this.httpClient.delete(`${this.categoryURL}/${id}`)
   }
-
 }

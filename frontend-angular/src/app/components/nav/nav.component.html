@@ -168,16 +168,16 @@
       <mat-icon>more_vert</mat-icon>
       </button>
       <mat-menu #adminMenu="matMenu" >
-        <button mat-menu-item  *ngIf="userService.isManager()" >
+        <button mat-menu-item  *ngIf="userService.isManager" >
           <span routerLink="all-users">ניהול משתמשים</span>
         </button>
-        <button mat-menu-item *ngIf="userService.isManager()" >
+        <button mat-menu-item *ngIf="userService.isManager" >
           <span routerLink="manage-products">ניהול מוצרים</span>
         </button>
-        <button mat-menu-item *ngIf="userService.isManager()" >
+        <button mat-menu-item *ngIf="userService.isManager" >
           <span routerLink="all-categories">ניהול קטגוריות</span>
         </button>
-        <button mat-menu-item  *ngIf="!userService.isManager()" >
+        <button mat-menu-item  *ngIf="!userService.isManager" >
           <span >אין לך הרשאות מנהל</span>
         </button>
       </mat-menu>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { NavComponent } from "./components/nav/nav.component";
 
@@ -10,6 +10,11 @@ import { NavComponent } from "./components/nav/nav.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
-export class AppComponent {
-  title = 'my-new';
+export class AppComponent implements OnInit{
+  title = 'overdrive';
+
+  ngOnInit(): void {
+    localStorage.removeItem('token');
+  }
+
 }

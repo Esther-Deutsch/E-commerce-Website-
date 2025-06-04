@@ -22,6 +22,11 @@
   min-width: 220px;
   position: relative;
   margin-bottom: 16px;
+
+  .options{
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 .category button {

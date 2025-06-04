@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Order } from '../classes/order';
 import { Observable } from 'rxjs';
@@ -12,12 +12,21 @@ export class OrderServiceService {
 
   constructor(private httpClient : HttpClient) { }
 
+    // [Authorize]
     //פונקציה להחזרת כל ההזמנות
     getAllOrders() : Observable<Order[]>
     {
+      const token = localStorage.getItem('token');
+      const jwt = token !== null ? JSON.parse(token) : null;
+      if (jwt.value == 'manager') {
+          const headers = new HttpHeaders({
+            'Authorization': `Bearer ${jwt.token}` // ודא שה-token תקין
+          })
+          return this.httpClient.get<Order[]>(this.orderURL, { headers });
+        }
       return this.httpClient.get<Order[]>(this.orderURL)
     }
-  
+
     //ID פונקציה המחזירה הזמנה לפי 
     getOrderById(id : number) : Observable<Order>
     {

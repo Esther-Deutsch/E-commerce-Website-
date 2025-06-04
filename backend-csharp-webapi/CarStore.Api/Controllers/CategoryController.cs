@@ -61,7 +61,7 @@ namespace CarStore.Api.Controllers
 
 
         //******* adds a new caregory ******
-        //[Authorize]
+        [Authorize]
         // POST api/<CategoryController>
         [HttpPost]
         public void Post([FromBody] string value)
@@ -70,7 +70,7 @@ namespace CarStore.Api.Controllers
         }
 
         //******* updates an existing caregory ******
-        //[Authorize]
+        [Authorize]
         // PUT api/<CategoryController>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)

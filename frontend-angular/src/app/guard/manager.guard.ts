@@ -7,7 +7,7 @@ export const managerGuard: CanActivateFn = (route, state) => {
   const userService = inject(UserServiceService);
   const router = inject(Router);
 
-  if(userService.isManager())
+  if(userService.isManager)
     return true;
   return router.navigate(['products']);
 };

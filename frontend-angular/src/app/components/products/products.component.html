@@ -36,8 +36,13 @@
         </div>
         <hr />
         <div class="favorite" >
-          <button class="compare-btn" style="margin-left: 4px" (click)="add(p)">הוסף לרשימת המועדפים</button>
-          <img appColorHeart (click)="add(p)" src="assets/images/favorites.png" alt=""/>
+          <button class="compare-btn" style="margin-left: 4px" (click)="addAndRemove(p)">הוסף לרשימת המועדפים</button>
+          @if(!favoriteService.isInCart(p.productId)){
+            <img appColorHeart (click)="addAndRemove(p)" src="assets/images/favorites.png" alt=""/>
+          }
+          @else {
+            <img appColorHeart (click)="addAndRemove(p)" src="assets/images/favorites-yellow.png" alt=""/>
+          }
         </div>
       </div>
     </div>

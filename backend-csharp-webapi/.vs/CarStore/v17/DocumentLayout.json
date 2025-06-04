@@ -3,12 +3,32 @@
   "WorkspaceRootPath": "F:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\CarWebsite\\backend-csharp-webapi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{EA8D1FE9-314F-4AF7-B814-AE430AE69EAC}|CarStore.Api\\CarStore.Api.csproj|f:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\carwebsite\\backend-csharp-webapi\\carstore.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EA8D1FE9-314F-4AF7-B814-AE430AE69EAC}|CarStore.Api\\CarStore.Api.csproj|solutionrelative:carstore.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FB8498BC-F09F-4D02-B1BF-458A9AD0721E}|CarStore.Core\\CarStore.Core.csproj|f:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\carwebsite\\backend-csharp-webapi\\carstore.core\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB8498BC-F09F-4D02-B1BF-458A9AD0721E}|CarStore.Core\\CarStore.Core.csproj|solutionrelative:carstore.core\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB8498BC-F09F-4D02-B1BF-458A9AD0721E}|CarStore.Core\\CarStore.Core.csproj|f:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\carwebsite\\backend-csharp-webapi\\carstore.core\\dto\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB8498BC-F09F-4D02-B1BF-458A9AD0721E}|CarStore.Core\\CarStore.Core.csproj|solutionrelative:carstore.core\\dto\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FB8498BC-F09F-4D02-B1BF-458A9AD0721E}|CarStore.Core\\CarStore.Core.csproj|f:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\carwebsite\\backend-csharp-webapi\\carstore.core\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FB8498BC-F09F-4D02-B1BF-458A9AD0721E}|CarStore.Core\\CarStore.Core.csproj|solutionrelative:carstore.core\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EA8D1FE9-314F-4AF7-B814-AE430AE69EAC}|CarStore.Api\\CarStore.Api.csproj|f:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\carwebsite\\backend-csharp-webapi\\carstore.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EA8D1FE9-314F-4AF7-B814-AE430AE69EAC}|CarStore.Api\\CarStore.Api.csproj|solutionrelative:carstore.api\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8D1FE9-314F-4AF7-B814-AE430AE69EAC}|CarStore.Api\\CarStore.Api.csproj|f:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\carwebsite\\backend-csharp-webapi\\carstore.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA8D1FE9-314F-4AF7-B814-AE430AE69EAC}|CarStore.Api\\CarStore.Api.csproj|solutionrelative:carstore.api\\controllers\\ordercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8D1FE9-314F-4AF7-B814-AE430AE69EAC}|CarStore.Api\\CarStore.Api.csproj|f:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\carwebsite\\backend-csharp-webapi\\carstore.api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA8D1FE9-314F-4AF7-B814-AE430AE69EAC}|CarStore.Api\\CarStore.Api.csproj|solutionrelative:carstore.api\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EA8D1FE9-314F-4AF7-B814-AE430AE69EAC}|CarStore.Api\\CarStore.Api.csproj|f:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\carwebsite\\backend-csharp-webapi\\carstore.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EA8D1FE9-314F-4AF7-B814-AE430AE69EAC}|CarStore.Api\\CarStore.Api.csproj|solutionrelative:carstore.api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -27,27 +47,90 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "OrderController.cs",
-              "DocumentMoniker": "F:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\CarWebsite\\backend-csharp-webapi\\CarStore.Api\\Controllers\\OrderController.cs",
-              "RelativeDocumentMoniker": "CarStore.Api\\Controllers\\OrderController.cs",
-              "ToolTip": "F:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\CarWebsite\\backend-csharp-webapi\\CarStore.Api\\Controllers\\OrderController.cs",
-              "RelativeToolTip": "CarStore.Api\\Controllers\\OrderController.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAAACoAAAA6AAAA",
+              "Title": "ProductDTO.cs",
+              "DocumentMoniker": "F:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\CarWebsite\\backend-csharp-webapi\\CarStore.Core\\DTO\\ProductDTO.cs",
+              "RelativeDocumentMoniker": "CarStore.Core\\DTO\\ProductDTO.cs",
+              "ToolTip": "F:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\CarWebsite\\backend-csharp-webapi\\CarStore.Core\\DTO\\ProductDTO.cs",
+              "RelativeToolTip": "CarStore.Core\\DTO\\ProductDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAmAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-29T17:02:29.695Z",
+              "WhenOpened": "2025-06-04T18:52:59.9Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CategoryDTO.cs",
+              "DocumentMoniker": "F:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\CarWebsite\\backend-csharp-webapi\\CarStore.Core\\DTO\\CategoryDTO.cs",
+              "RelativeDocumentMoniker": "CarStore.Core\\DTO\\CategoryDTO.cs",
+              "ToolTip": "F:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\CarWebsite\\backend-csharp-webapi\\CarStore.Core\\DTO\\CategoryDTO.cs",
+              "RelativeToolTip": "CarStore.Core\\DTO\\CategoryDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T18:52:57.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Product.cs",
+              "DocumentMoniker": "F:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\CarWebsite\\backend-csharp-webapi\\CarStore.Core\\Product.cs",
+              "RelativeDocumentMoniker": "CarStore.Core\\Product.cs",
+              "ToolTip": "F:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\CarWebsite\\backend-csharp-webapi\\CarStore.Core\\Product.cs",
+              "RelativeToolTip": "CarStore.Core\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T18:43:36.158Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "F:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\CarWebsite\\backend-csharp-webapi\\CarStore.Api\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "CarStore.Api\\Controllers\\UserController.cs",
+              "ToolTip": "F:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\CarWebsite\\backend-csharp-webapi\\CarStore.Api\\Controllers\\UserController.cs",
+              "RelativeToolTip": "CarStore.Api\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAsAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T10:10:10.095Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "F:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\CarWebsite\\backend-csharp-webapi\\CarStore.Api\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "CarStore.Api\\Controllers\\CategoryController.cs",
+              "ToolTip": "F:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\CarWebsite\\backend-csharp-webapi\\CarStore.Api\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "CarStore.Api\\Controllers\\CategoryController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAEgAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-04T10:09:59.483Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderController.cs",
+              "DocumentMoniker": "F:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\CarWebsite\\backend-csharp-webapi\\CarStore.Api\\Controllers\\OrderController.cs",
+              "RelativeDocumentMoniker": "CarStore.Api\\Controllers\\OrderController.cs",
+              "ToolTip": "F:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\CarWebsite\\backend-csharp-webapi\\CarStore.Api\\Controllers\\OrderController.cs",
+              "RelativeToolTip": "CarStore.Api\\Controllers\\OrderController.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAAuwBwAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-29T17:02:29.695Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "ProductController.cs",
               "DocumentMoniker": "F:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\CarWebsite\\backend-csharp-webapi\\CarStore.Api\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "CarStore.Api\\Controllers\\ProductController.cs",
               "ToolTip": "F:\\school\\\u05D2\u05D1, \u05D7\u05E0\u05D9 \u05D2\u05E8\u05D9\u05E0\u05E4\u05DC\u05D3 Angular\\\u05E4\u05E8\u05D5\u05D9\u05E7\u05D8 \u05E1\u05D5\u05E4\u05D9\\CarWebsite\\backend-csharp-webapi\\CarStore.Api\\Controllers\\ProductController.cs",
               "RelativeToolTip": "CarStore.Api\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAgwDwAAAAfAAAA",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAkwFEAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T20:00:56.473Z"
+              "WhenOpened": "2025-05-26T20:00:56.473Z",
+              "EditorCaption": ""
             }
           ]
         }

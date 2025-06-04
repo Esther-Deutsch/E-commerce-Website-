@@ -49,6 +49,12 @@ export class FavoritesServiceService {
     this.cartSubject.next(this.cartItems);
   }
 
+  // ובודקת האם הפריט בדל id פונקציה שמקבלת 
+  isInCart(id : number)
+  {
+    return this.cartItems.some(item => item.product.productId === id);
+  }
+
   /**
    * הוספת מוצר לעגלה
    */

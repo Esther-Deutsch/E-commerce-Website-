@@ -56,7 +56,7 @@ namespace CarStore.Api.Controllers
         }
 
         // returns a list of products that are out of stack
-        //[Authorize]
+        [Authorize]
         // GET api/<ProductController>/5
         [HttpGet("outOfStack")]
         public List<ProductDTO> GetNotInStack()
@@ -70,7 +70,7 @@ namespace CarStore.Api.Controllers
 
 
         // POST api/<ProductController>
-        //[Authorize]
+        [Authorize]
         [HttpPost]
         public async Task Post([FromBody] ProductDTO pdto)
         {
@@ -88,7 +88,7 @@ namespace CarStore.Api.Controllers
         }
 
         // DELETE api/<ProductController>/5
-        //[Authorize]
+        [Authorize]
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

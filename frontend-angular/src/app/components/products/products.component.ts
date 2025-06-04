@@ -29,7 +29,7 @@ export class ProductsComponent implements OnInit {
   // favoriteImg : string = "favorites.png"
   carsBySearch : string
   
-  constructor(private favoriteService : FavoritesServiceService, 
+  constructor(public favoriteService : FavoritesServiceService, 
               public productService : ProductsServiceService,
               public userService : UserServiceService
             ){}
@@ -42,10 +42,12 @@ export class ProductsComponent implements OnInit {
     );
 }
 
-  add(product : Product){
+  addAndRemove(product : Product){
     if(this.userService.currentUser){
-      alert('נוסף בהצלחה!')
-      this.favoriteService.addToCart(product)
+      if(!this.favoriteService.isInCart(product.productId))
+        this.favoriteService.addToCart(product)
+      else
+        this.favoriteService.removeFromCart(product.productId)
       // this.favoriteImg = "favorites-yellow.png"
     }
     else{

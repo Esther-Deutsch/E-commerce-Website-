@@ -21,10 +21,10 @@ namespace CarStore.Api.Controllers
             if (logIn.Name == "טובה" && logIn.Password == "11111111")
             {
                 var claims = new List<Claim>()
-            {
+                {
                 new Claim(ClaimTypes.Name, "טובה"),
                 new Claim(ClaimTypes.Role, "manager")
-            };
+                };
 
                 var secretKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("SomeLongLongLongKeyToGenerateMyJwtToken"));
                 var signinCredentials = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
@@ -36,7 +36,7 @@ namespace CarStore.Api.Controllers
                     signingCredentials: signinCredentials
                 );
                 var tokenString = new JwtSecurityTokenHandler().WriteToken(tokeOptions);
-                return Ok(new { Token = tokenString });
+                return Ok(new { Token = tokenString , claims.FirstOrDefault(c => c.Type == ClaimTypes.Role)?.Value });
             }
             return Unauthorized();
         }

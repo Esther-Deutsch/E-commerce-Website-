@@ -35,6 +35,12 @@ export class CategoriesComponent implements OnInit {
     });
   }
 
+  deleteCategory(id : number){
+    this.categoryService.deleteCategory(id).subscribe(()=>{
+      this.loadCategories();
+    })
+  }
+
   save(id: number, newName: string) {
     this.categoryService.updateCategory(id, newName).subscribe(() => {
       this.loadCategories(); // טען מחדש את הרשימה

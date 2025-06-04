@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Product } from '../classes/product';
@@ -39,30 +39,57 @@ export class ProductsServiceService {
       return this.httpClient.get<Product[]>(`${this.productsURL}/category/${id}`)
     }
 
+    // [Authorize]
     //פונקציה שתחזיר את כל המוצר שלא במלאי
     getNotInStack() : Observable<Product[]>
     {
+      const token = localStorage.getItem('token');
+      const jwt = token !== null ? JSON.parse(token) : null;
+      if (jwt.value == 'manager') {
+        const headers = new HttpHeaders({
+          'Authorization': `Bearer ${jwt.token}` // ודא שה-token תקין
+        })
+        return this.httpClient.get<Product[]>(`${this.productsURL}/outOfStack`, { headers });
+      }
       return this.httpClient.get<Product[]>(`${this.productsURL}/outOfStack`)
     }
 
+    // [Authorize]
     //פונקציה שתוסיף מוצר
     addProduct(newProduct : Product) : Observable<any>
     {
-      console.log(newProduct);
+      // console.log(newProduct);
+      const token = localStorage.getItem('token');
+      const jwt = token !== null ? JSON.parse(token) : null;
+      if (jwt.value == 'manager') {
+        const headers = new HttpHeaders({
+          'Authorization': `Bearer ${jwt.token}` // ודא שה-token תקין
+        })
+        return this.httpClient.post(this.productsURL, newProduct, { headers });
+      }
       return this.httpClient.post(this.productsURL, newProduct)
     }
-
+    
+    // [Authorize] - ????
     //פונקציה שתעדכן מוצר
     updateProduct(id : number, product : Product) : Observable<any>
     {
-      return this.httpClient.put(`${this.productsURL}/${id}`, {params: product})
+      return this.httpClient.put(`${this.productsURL}/${id}`, product)
     }
 
+    // [Authorize]
     //פונקציה שתמחק מוצר
     deleteProduct(id : number) : Observable<any> 
     {
+      const token = localStorage.getItem('token');
+      const jwt = token !== null ? JSON.parse(token) : null;
+      if (jwt.value == 'manager') {
+      const headers = new HttpHeaders({
+        'Authorization': `Bearer ${jwt.token}` // ודא שה-token תקין
+      })
+      return this.httpClient.delete(`${this.productsURL}/${id}`, { headers });
+    }
       return this.httpClient.delete(`${this.productsURL}/${id}`)
     }
-
-  }
+}
 

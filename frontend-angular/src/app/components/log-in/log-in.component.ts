@@ -38,45 +38,37 @@ export class LogInComponent {
   });
 
   submit() {
+    // בעת החלפת משתמשים - שזה יוודא שהתוכן מתרוקן
+    this.userService.logout()
+
+    // html שליפת הנתונים מתוך הטופס ב 
     const name = this.loginForm.get('loginName')?.value;
     const password = this.loginForm.get('loginPassword')?.value;
 
-    // בדיקה אם זה מנהל
-    // if (name === 'טובה' && password === '11111111') {
-    //   // קריאה ל-API של המנהל
-    //   this.userService.login(name, password).subscribe({
-    //     next: (res) => {
-    //       alert(`${name}, ${password}`)
-    //       if (res && res.Token) {
+    // בשביל לראות אם המשתמש מנהל ולהחזיר טוקן login שליחה לפונקציה של
+    this.userService.login(name, password).subscribe((data) => {
+      localStorage.setItem('token', JSON.stringify(data));
+      // if(data.role == 'manager')
+        // this.userService.isManager = true;
+    });
 
-    //         localStorage.setItem('token', res.Token);
-    //         this.userService.userIcon = 'logedin.png';
-    //         // ניתוב לדף ניהול/מוצרים
-    //         this.router.navigate(['/']);
-    //       }
-    //     },
-    //     error: () => {
-    //       alert('שם משתמש או סיסמה שגויים');
-    //     },
-    //   });
-    // } else
-    {
-      // כניסה רגילה
-      this.userService.getUserByNameAndPassword(name, password).subscribe({
-        next: (user) => {
-          if (user) {
-            this.userService.setUser(user);
-            this.userService.userIcon = 'logedin.png';
-            this.router.navigate(['/products']);
-          }
-        },
-        error: (err) => {
-          this.router.navigate(['/register']);
-        },
-      });
-    }
+    // לשלוף את המשתמש ולהציב אותו במשתנה ואם אין כזה משתמש לנווט לעמוד של הרשם
+    this.userService.getUserByNameAndPassword(name, password).subscribe({
+      next: (user) => {
+        if (user) {
+          this.userService.setUser(user);
+          this.userService.userIcon = 'logedin.png';
+          this.router.navigate(['/products']);
+        }
+      },
+      error: (err) => {
+        this.router.navigate(['/register']);
+      },
+    });
+
   }
 
+  // מנווט לעמוד הרשם בעת לחיצה על הכפתור של הרשם
   goToRegister() {
     this.router.navigate(['register']);
   }

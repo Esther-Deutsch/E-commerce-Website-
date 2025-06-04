@@ -60,14 +60,6 @@ export class NavComponent {
     this.productsService.products = this.productsService.allProducts;
   }
 
-  // פונקציה שמנתקת את המשתמש מהאתר
-  signOut(){
-    this.userService.currentUser = undefined; // או null
-    this.favoriteService.amountInCart = 0;
-    this.favoriteService.clearCart();
-    this.userService.userIcon = "signedout.png"
-  }
-
   // פונקציה לעדכון המשתמש הנוכחי
   updateUser(){
     if(this.userService.currentUser){
@@ -75,5 +67,10 @@ export class NavComponent {
     }
     else
       alert("אין משתמש מחובר")
+  }
+
+  // פונקציה שמנתקת את המשתמש מהאתר
+  signOut(){
+    this.userService.logout()
   }
 }

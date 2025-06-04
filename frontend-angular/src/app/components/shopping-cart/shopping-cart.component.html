@@ -34,11 +34,7 @@
     <section class="cart-items">
       @for (item of cart; track $index ) {
       <div class="cart-item">
-        <input
-          type="checkbox"
-          class=""
-          (change)="updateSum($event, item.product.price)"
-        />
+        <input [disabled]="item.product.qntInStack == '0'" type="checkbox" class="" (change)="updateSum($event, item.product.price, item.product)"/>
         <img
           src="assets/images/cars/{{ item.product.img }}.png"
           alt="{{ item.product.productName }}"
@@ -48,7 +44,12 @@
           <!-- <p>total: {{ item.quantity * item.product.price }}</p> -->
           <!-- <app-quantity-selector></app-quantity-selector> -->
           <span>₪ {{ item.product.price | numberWithCommas }}</span>
-          <div class="cart-item-image"></div>
+          @if(item.product.qntInStack != '0'){
+          <div class="cart-item-image" >כמות במלאי: {{item.product.qntInStack}}</div>
+          }
+          @else {
+            <div class="cart-item-image" style="color: red;">הפריט אינו זמין</div>
+          }
         </div>
         <p class="deleteBtn" (click)="deleteFromCart(item.product.productId)">מחיקה</p>
       </div>

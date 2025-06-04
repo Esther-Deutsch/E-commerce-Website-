@@ -42,7 +42,6 @@ registerForm: FormGroup = new FormGroup({
   
 
   submit(){
-
       const new_user = new User(
         0,
         this.registerForm.get("userName")?.value,
@@ -67,7 +66,7 @@ registerForm: FormGroup = new FormGroup({
         this.user_service.userIcon = "logedin.png";
         this.user_service.setUser(new_user);
         // alert(new_user.userName)
-        this.router.navigate(["log-in"]);
+        this.router.navigate(["products"]);
       });
     }
   });
