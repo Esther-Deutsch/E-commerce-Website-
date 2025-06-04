@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Category } from '../../classes/category';
 import { CategoryServiceService } from '../../sevices/category-service.service';
-import { NgIf } from '@angular/common';
+import { CommonModule, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-categories',
-  imports: [NgIf],
+  imports: [NgIf, CommonModule],
   templateUrl: './categories.component.html',
   styleUrl: './categories.component.scss',
 })

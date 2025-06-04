@@ -67,8 +67,7 @@
               "RelativeToolTip": "CarStore.Core\\DTO\\CategoryDTO.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T18:52:57.719Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T18:52:57.719Z"
             },
             {
               "$type": "Document",
@@ -80,8 +79,7 @@
               "RelativeToolTip": "CarStore.Core\\Product.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-04T18:43:36.158Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-04T18:43:36.158Z"
             },
             {
               "$type": "Document",
@@ -129,8 +127,7 @@
               "RelativeToolTip": "CarStore.Api\\Controllers\\ProductController.cs",
               "ViewState": "AQIAAEMAAAAAAAAAAAAkwFEAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T20:00:56.473Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-05-26T20:00:56.473Z"
             }
           ]
         }

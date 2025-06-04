@@ -12,7 +12,7 @@
   @for (c of categories; track $index) {
   <div class="category">
     <p>מספר קטגוריה: {{ c.categoryId }}</p>
-    <p>שם קטגוריה: {{ c.categoryName }}</p>
+    <p>שם קטגוריה: {{ c.categoryName | titlecase  }}</p>
     <div class="options">
       <button (click)="showEdit(c.categoryId)">ערוך קטגוריה</button>
       <button (click)="deleteCategory(c.categoryId)" style="background-color: rgb(214, 1, 1);">הסר קטגוריה</button>
